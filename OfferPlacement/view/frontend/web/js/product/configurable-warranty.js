@@ -23,7 +23,7 @@ define([
             buttonEnabled: true,
             modalEnabled: false,
             blockClass: 'product-warranty-offers',
-            insertionPoint: 'div.field.qty',
+            insertionPoint: 'div.box-tocart>div.fieldset',
             insertionLogic: 'before',
             formInputName: 'warranty',
             formInputClass: 'extend-warranty-input',
