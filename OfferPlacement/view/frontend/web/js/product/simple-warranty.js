@@ -22,7 +22,7 @@ define([
             buttonEnabled: true,
             modalEnabled: false,
             blockClass: 'product-warranty-offers',
-            insertionPoint: 'div.box-tocart>div.fieldset',
+            insertionPoint: 'div.field.qty',
             insertionLogic: 'before',
             formInputName: 'warranty',
             formInputClass: 'extend-warranty-input',
@@ -128,10 +128,9 @@ define([
 
             var elem = this.element;
             if (this.options.insertionPoint) {
-                elem = $(this.options.insertionPoint, this.element);
+                elem = $(this.options.insertionPoint);
                 if (!elem.length) {
                     elem = this.element;
-                    method = 'appendTo';
                 }
             }
 
